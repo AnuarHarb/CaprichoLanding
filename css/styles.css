@@ -1,0 +1,31 @@
+body {
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+figure {
+  text-align: center;
+}
+img {
+  margin-top: 30%;
+}
+#text {
+  margin-top: 8%;
+}
+p {
+  color: white;
+  font-size: 30px;
+  font-family: helvetica;
+  text-align: center;
+  margin-top: 148px;
+  letter-spacing: 5px;
+}
+@media screen and (max-width:450px) {
+  p {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+  #text {
+    margin-bottom: 50px;
+  }
+}

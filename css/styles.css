@@ -1,31 +1,162 @@
 body {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+/*Nav Bar*/
+/*Overide from Bootstrap Component*/
+.navbar-brand {
+  padding-top: 0;
+  overflow-y: hidden;
+}
+#brand-img {
+  margin-top: 0px;
+  width: 50px;
+}
+.navbar-text a {
+  color: white;
+}
+.navbar-text a:hover {
+  text-decoration: none;
+  color: gold;
+}
+.navbar-nav li a:hover {
+  color: gold !important;
+}
+
+/*Mar Abierto*/
+#mar_abierto {
   background-image: url(../img/fondo.jpg);
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
+  padding-bottom: 100px;
 }
-figure {
+#mar_abierto figure {
   text-align: center;
 }
-img {
+#mar_abierto figure img {
   margin-top: 30%;
 }
-#text {
+#mar_abierto div {
   margin-top: 8%;
 }
-p {
+#mar_abierto div p {
   color: white;
   font-size: 30px;
   font-family: helvetica;
   text-align: center;
-  margin-top: 148px;
+  margin-top: 140px;
   letter-spacing: 5px;
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:769px) {
   p {
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 20px !important;
+    margin-top: 50px !important;
   }
-  #text {
-    margin-bottom: 50px;
+  #mar_abierto div{
+    margin-bottom: 50px !important;
   }
+}
+
+/*Caprico del Rey*/
+#Capricho {
+  background-color: black;
+}
+#Capricho img {
+  margin-top: 100px;
+}
+#Capricho p, h1 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0;
+}
+#Capricho h1 {
+  font-size: 30px;
+}
+
+/*American Pale Ale*/
+#pale {
+  background-color: black;
+  padding: 50px 0;
+}
+#pale h2, p {
+  color: white;
+}
+#pale ul li {
+  color: white;
+  list-style: none;
+}
+#pale ul li span {
+  font-weight: bold;
+}
+
+/*Lager*/
+#lager {
+  background-color: black;
+  padding: 50px 0;
+}
+#lager h2, p {
+  color: white;
+}
+#lager ul li {
+  color: white;
+  list-style: none;
+}
+#lager ul li span {
+  font-weight: bold;
+}
+
+/*Contacto*/
+#contacto {
+   background-image: url(../img/fondo2.jpg);
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   padding: 100px 0;
+   text-align: center;
+}
+#contacto #redes {
+  background-color: white;
+  padding: 40px;
+  display: inline-block;
+}
+#contacto h2 {
+  text-align: center;
+  color: black;
+  font-size: 45px;
+  font-family: helvetica;
+  margin-bottom: 50px;
+}
+#contacto p {
+ text-align: center;
+ color: black;
+ font-size: 20px;
+ font-family: helvetica;
+ width: 350px;
+}
+#contacto p:nth-child(2) {
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+#contacto p:nth-child(5) {
+ font-size: 15px;
+}
+#contacto span {
+ font-weight: bold;
+}
+#contacto ul {
+  padding: 0;
+}
+#contacto ul li {
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+#contacto ul li a {
+  font-size: 40px;
+  cursor: pointer;
+  margin: 0 20px;
 }

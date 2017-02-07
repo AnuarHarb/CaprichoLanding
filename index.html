@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" href="img/mar_logo.png" type="image/x-icon"/>
+  <link rel="icon" href="img/favicon.png" type="image/x-icon"/>
   <link rel="canonical" href="www.cervecerosmarabierto.com" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
   <meta name="description" content="Cervezas artesanales mexicanas de la región de Zihuatanejo. Producimos diferentes tipos de cerveza artesanal con recetas exclusivas de la casa." />
   <meta name="keywords" content="Palabras clave separadas por coma"/>
 </head>
-<body class="col-xs-12">
+<body>
 <!-- Nav Bar   -->
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
@@ -34,11 +34,21 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#mar_abierto">Cerveceros Mar Abierto</a></li>
-          <li><a href="#Capricho">Capricho del Rey</a></li>
-          <li><a href="#pale">American Pale Ale</a></li>
-          <li><a href="#lager">Lager</a></li>
+          <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Capricho del Rey <span class="caret"></span></a>
+             <ul class="dropdown-menu navbar-inverse">
+               <li><a href="#Capricho">Leyenda</a></li>
+               <li role="separator" class="divider"></li>
+               <li><a href="#pale">American Pale Ale</a></li>
+               <li><a href="#lager">Lager</a></li>
+             </ul>
+           </li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
@@ -46,34 +56,57 @@
 <!-- Mar Abierto   -->
   <section id="mar_abierto" class="col-xs-12">
     <figure class="col-xs-12 col-sm-5">
-      <img class="col-xs-10 col-xs-offset-1" src="img/marAbierto_logoWhite.png" alt="Logo de Mar Abierto">
+      <img src="img/marAbierto_logoWhite.png" alt="Logo de Mar Abierto">
     </figure>
     <div class="col-xs-12 col-sm-7">
-      <p>EMBOTELLAMOS EL SABOR DE NUESTRA CULTURA</p>
-      <p>Más información <br> 755 130 9696</p>
+      <p>EMBOTELLAMOS EL SABOR DE <br> NUESTRA CULTURA</p>
     </div>
+  </section>
+
+<!-- Nosotros -->
+  <section id="nosotros" class="col-xs-12">
+    <figure class="col-xs-12 col-sm-3 col-sm-offset-1">
+      <img src="img/fabrica.jpeg" alt="Torre de cervezas Capricho del Rey">
+    </figure>
+    <div class="col-xs-12 col-sm-6 col-sm-offset-1">
+      <p><span>Mar Abierto Cerveceros</span> surge de la iniciativa de distinguir a la <span> región de Costa Grande</span> en el estado de <span>Guerrero</span>  con productos de <span>calidad</span>, junto con nuestro gusto por la <span>cerveza artesanal</span>.</p>
+    </div>
+    <ul class="col-sm-12 col-md-6 col-md-offset-1">
+      <li><figure><img src="img/agua.jpg" alt="agua"></figure><br>Agua</li>
+      <li><figure><img src="img/malta.jpg" alt="malta"></figure><br>Malta</li>
+      <li><figure><img src="img/lupulo.jpg" alt="lupulo"></figure><br>Lúpulo</li>
+      <li><figure><img src="img/levadura.jpg" alt="levadura"></figure><br>Levadura</li>
+    </ul>
   </section>
 
 <!-- Capricho del Rey -->
   <section id="Capricho" class="col-xs-12">
-    <img class="col-xs-6 col-xs-offset-3" src="img/capricho_transp.gif" alt="Capricho del Rey">
-    <p class="col-xs-12">La primera cerveza artesanal originaria de Zihuatanejo</p>
-    <p class="col-xs-12">En el año 1500 un rey purépecha mandó hacer muros bajar el mar para nadar con sus doncellas con tranquilidad, así creó el primer arrecife artificial del mundo, sin saber el beneficio que su capricho traería a la región</p>
-    <h1 class="col-xs-12">Cervezas Artesanales</h1>
-    <img class="col-xs-6 col-xs-offset-3" src="img/capricho_transp.gif" alt="cervezas artesanales">
+    <div class="capricho-title">
+      <figure class="col-xs-12">
+        <img src="img/capricho_transp.gif" alt="Capricho del Rey">
+      </figure>
+    </div>
+    <p class="col-xs-12 col-sm-6 col-sm-offset-3">La primera cerveza artesanal originaria de Zihuatanejo <br> <br>
+      En el año 1500 un rey purépecha mandó hacer muros bajar el mar para nadar con sus doncellas con tranquilidad, así creó el primer arrecife artificial del mundo, sin saber el beneficio que su capricho traería a la región</p>
   </section>
 
 <!-- American Pale Ale -->
   <section id="pale" class="col-xs-12">
-    <article class="col-xs-12 col-sm-4 col-sm-offset-1">
-      <h2>American Pale Ale</h2>
-      <figure class="col-xs-12">
-        <img class="col-xs-10 col-xs-offset-1" src="img/capricho_transp.gif" alt="American Pale Ale">
-      </figure>
+    <article class="col-xs-12 col-sm-3 col-sm-offset-1">
+      <h2><span>American Pale Ale</span></h2>
       <p>American Pale Ale es una cerveza refrescante de color dorado inteso, ligero amargos y sabor a frutos cítricos.</p>
       <p>Se recomienda servirse en un vaso de cristal y a la temperatura de 5ºC</p>
+      <br>
+      <h2>Maridaje</h2>
+      <p>Las cervezas American Pale Ale se pueden acompañar con pescados ahumados, hamburguesas, carne asada, pierna, cerdo adobado, ensaladas no ácidas y verduras amargas.</p>
     </article>
-    <article class="col-xs-12 col-sm-4 col-sm-offset-2">
+    <figure class="col-xs-12 col-sm-4">
+      <img class="col-xs-10 col-xs-offset-1" src="img/pale_img.jpg" alt="American Pale Ale">
+    </figure>
+    <article class="col-xs-12 col-sm-3">
+      <figure>
+        <img src="img/pale.png" alt="American Pale Ale">
+      </figure>
       <h2>Notas de Cata</h2>
       <ul>
         <li><span>Sabor:</span> Frutos Cíticos</li>
@@ -81,22 +114,28 @@
         <li><span>IBUs:</span> 23</li>
         <li><span>Fortaleza Etílica:</span> 5%</li>
       </ul>
-      <h2>Maridaje</h2>
-      <p>Las cervezas American Pale Ale se pueden acompañar con pescados ahumados, hamburguesas, carne asada, pierna, cerdo adobado, ensaladas no ácidas y verduras amargas.</p>
     </article>
   </section>
 
+  <hr class="col-xs-10 col-xs-offset-1">
+
 <!-- Lagger -->
   <section id="lager" class="col-xs-12">
-    <article class="col-xs-12 col-sm-4 col-sm-offset-1">
+    <article class="col-xs-12 col-sm-3 col-sm-offset-1">
       <h2>Lager</h2>
-      <figure class="col-xs-12">
-        <img class="col-xs-10 col-xs-offset-1" src="img/capricho_transp.gif" alt="Lager">
-      </figure>
       <p>La cerveza Lager es clara, dulce, ligera con abundante gas y de graduación moderada; muy refrescante, espumosa, ligeramente dulce.</p>
       <p>Se recomienda servirse en un vaso de cristal y a la temperatura de 5ºC</p>
+      <br>
+      <h2>Maridaje</h2>
+      <p>Las cervezas lager hacen una excelente combinación con pizza, carne asada, cordero, ceviches, pescados azules y mariscos en general.</p>
     </article>
-    <article class="col-xs-12 col-sm-4 col-sm-offset-2">
+    <figure class="col-xs-12 col-sm-4">
+      <img class="col-xs-10 col-xs-offset-1" src="img/pale_img.jpg" alt="Lager">
+    </figure>
+    <article class="col-xs-12 col-sm-3">
+      <figure>
+        <img src="img/lager.png" alt="Lager">
+      </figure>
       <h2>Notas de Cata</h2>
       <ul>
         <li><span>Sabor:</span> Dulce</li>
@@ -104,16 +143,16 @@
         <li><span>IBUs:</span> 30</li>
         <li><span>Fortaleza Etílica:</span> 5%</li>
       </ul>
-      <h2>Maridaje</h2>
-      <p>Las cervezas lager hacen una excelente combinación con pizza, carne asada, cordero, ceviches, pescados azules y mariscos en general.</p>
     </article>
   </section>
 
 <!-- contacto -->
   <section id="contacto" class="col-xs-12">
     <div id="redes">
-      <h2>CONTACTO</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque expedita alias, hic laborum, obcaecati cum mollitia, eum magni quasi inventore reiciendis porro. Magnam, voluptates maxime ducimus dolor dicta, laborum sequi!</p>
+      <h3>¿Una cervecita?</h3>
+      <h3>¡Contáctanos!</h3>
+      <br>
+      <br>
       <p><span>Teléfonos:</span> 755 130 9696</p>
       <p><span>Mail:</span> contacto@mail.com</p>
       <p>Redes Sociales</p>

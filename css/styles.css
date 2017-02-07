@@ -1,26 +1,40 @@
 body {
+  background-color: black;
   margin: 0px !important;
   padding: 0px !important;
 }
 
+img {
+  width: 100%;
+}
+
+hr {
+  background-color: black;
+  color:  white;
+}
 /*Nav Bar*/
 /*Overide from Bootstrap Component*/
 .navbar-brand {
   padding-top: 0;
   overflow-y: hidden;
 }
+
 #brand-img {
   margin-top: 0px;
   width: 50px;
 }
-.navbar-text a {
+
+.navbar-text a, .dropdown-menu li a {
   color: white;
 }
+
 .navbar-text a:hover {
   text-decoration: none;
   color: gold;
 }
-.navbar-nav li a:hover {
+
+.navbar-nav li a:hover, .dropdown-menu li a:hover {
+  background-color: #222222;
   color: gold !important;
 }
 
@@ -30,133 +44,256 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
+
 #mar_abierto figure {
   text-align: center;
 }
+
 #mar_abierto figure img {
-  margin-top: 30%;
+  margin-top: 20%;
+  width: 100%;
 }
+
 #mar_abierto div {
   margin-top: 8%;
 }
+
 #mar_abierto div p {
   color: white;
   font-size: 30px;
   font-family: helvetica;
   text-align: center;
-  margin-top: 140px;
+  margin-top: 220px;
   letter-spacing: 5px;
 }
+
 @media screen and (max-width:769px) {
-  p {
+  #mar_abierto div p {
     font-size: 20px !important;
-    margin-top: 50px !important;
+    margin-top: 20px !important;
   }
+
   #mar_abierto div{
     margin-bottom: 50px !important;
   }
 }
 
+/*nosotros*/
+#nosotros {
+  background-color: white;
+  padding: 50px;
+}
+
+#nosotros figure{
+  overflow: hidden;
+}
+
+#nosotros figure img{
+  border-radius: 30px;
+}
+
+#nosotros p {
+  background-color: #222222;
+  border-radius: 30px;
+  color: white;
+  font-family: helvetica;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+#nosotros p span {
+  color: gold;
+}
+
+#nosotros ul {
+  list-style: none;
+  text-align: center;
+}
+
+#nosotros ul li {
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 80px 10px;
+  overflow: hidden;
+  text-align: center;
+  width: 100px;
+}
+
+@media screen and (max-width:991px) {
+  #nosotros ul li {
+    margin: 20px 10px;
+  }
+}
+
+#nosotros ul li figure {
+  border-radius: 100px;
+}
+
 /*Caprico del Rey*/
 #Capricho {
-  background-color: black;
+  background-image: url('../img/black.jpg');
+  background-size: cover;
 }
+
+#Capricho .capricho-title {
+  background-color: transparent;
+  transition: background-color .4s;
+  width: 100%;
+}
+
+#Capricho figure {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
 #Capricho img {
-  margin-top: 100px;
+  width: 300px;
 }
+
 #Capricho p, h1 {
   color: white;
-  font-size: 18px;
-  text-align: center;
-  margin: 20px 0;
+  font-size: 22px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: justify;
 }
+
+#Capricho p span {
+  color: gold;
+}
+
 #Capricho h1 {
   font-size: 30px;
 }
+
 
 /*American Pale Ale*/
 #pale {
   background-color: black;
   padding: 50px 0;
 }
+
 #pale h2, p {
   color: white;
 }
+
+
+
 #pale ul li {
   color: white;
   list-style: none;
 }
+
 #pale ul li span {
   font-weight: bold;
 }
+
 
 /*Lager*/
 #lager {
   background-color: black;
   padding: 50px 0;
 }
+
 #lager h2, p {
   color: white;
 }
+
 #lager ul li {
   color: white;
   list-style: none;
 }
+
 #lager ul li span {
   font-weight: bold;
 }
 
+
 /*Contacto*/
 #contacto {
-   background-image: url(../img/fondo2.jpg);
+   background-image: url(../img/puerto.jpg);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
-   padding: 100px 0;
+   padding: 150px 0;
    text-align: center;
 }
+
 #contacto #redes {
   background-color: white;
-  padding: 40px;
   display: inline-block;
+  padding: 40px;
+  opacity: .8;
 }
+
 #contacto h2 {
-  text-align: center;
   color: black;
-  font-size: 45px;
   font-family: helvetica;
+  font-size: 45px;
   margin-bottom: 50px;
+  text-align: center;
 }
+
 #contacto p {
  text-align: center;
  color: black;
  font-size: 20px;
  font-family: helvetica;
- width: 350px;
+ width: 300px;
 }
+
 #contacto p:nth-child(2) {
   text-align: justify;
   margin-bottom: 30px;
   font-size: 15px;
 }
+
 #contacto p:nth-child(5) {
  font-size: 15px;
 }
+
 #contacto span {
  font-weight: bold;
 }
+
 #contacto ul {
   padding: 0;
 }
+
 #contacto ul li {
   list-style: none;
   display: inline-block;
   text-align: center;
 }
+
 #contacto ul li a {
   font-size: 40px;
   cursor: pointer;
   margin: 0 20px;
+}
+
+@media screen and (max-width:769px) {
+  #redes {
+    padding: 10px !important;
+  }
+}
+
+.sticky {
+  background-color: black !important;
+  left: 0;
+  position: fixed;
+  top: 50px;
+  z-index: 2;
+}
+
+.sticky-padding {
+  padding-top: 100px;
 }

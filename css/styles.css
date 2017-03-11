@@ -96,6 +96,13 @@ hr {
   padding: 50px;
 }
 
+@media screen and (max-width:450px) {
+  #nosotros {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 #nosotros figure{
   height: 100%;
   overflow: hidden;
@@ -246,6 +253,10 @@ hr {
 #lager {
   background-color: black;
   padding: 100px 0;
+}
+
+#lager figure {
+  margin-bottom: 20px;
 }
 
 #lager h2 {

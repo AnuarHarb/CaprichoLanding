@@ -43,6 +43,10 @@ hr {
   color: gold !important;
 }
 
+.navbar-collapse {
+  background-color: black;
+}
+
 /*Mar Abierto*/
 #mar_abierto {
   background-image: url(../img/fondo.jpg);

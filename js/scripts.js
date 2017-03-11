@@ -1,16 +1,14 @@
 var scrollTop = $(window).scrollTop();
-var caprichoTop = $('#Capricho').offset().top -50;
+var caprichoTop = $('#Capricho').offset().top +120;
 var contactoTop = $('#contacto').offset().top -100;
 
 function stickyNav(scrollTop) {
   if (scrollTop >= caprichoTop && scrollTop < contactoTop ) {
     $('.capricho-title').addClass('sticky');
-    $('#Capricho').addClass('sticky-padding');
-    console.log('si')
+    $('#Capricho p').addClass('sticky-padding');
   } else {
     $('.capricho-title').removeClass('sticky');
-    $('#Capricho').removeClass('sticky-padding');
-    console.log('no')
+    $('#Capricho p').removeClass('sticky-padding');
   };
 };
 
@@ -21,4 +19,12 @@ $(window).scroll(function() {
   console.log('scrollTop = ' + scrollTop)
   console.log('caprichoTop = ' + caprichoTop)
   stickyNav(scrollTop)
+});
+
+$('.navbar-nav li a').on('click', function() {
+  target = $(this).attr('data-target');
+  console.log(target)
+  $('html, body').animate({
+      scrollTop: $('#' + target).offset().top - 100
+  }, 1000);
 });

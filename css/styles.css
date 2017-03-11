@@ -20,8 +20,13 @@ hr {
 }
 
 #brand-img {
-  margin-top: 0px;
+  margin-top: -5px;
   width: 50px;
+}
+
+.navbar {
+  height: 60px;
+  padding-top: 5px;
 }
 
 .navbar-text a, .dropdown-menu li a {
@@ -41,7 +46,7 @@ hr {
 /*Mar Abierto*/
 #mar_abierto {
   background-image: url(../img/fondo.jpg);
-  background-position: center;
+  background-position:center;
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: 40px;
@@ -62,10 +67,10 @@ hr {
 
 #mar_abierto div p {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   font-family: helvetica;
   text-align: center;
-  margin-top: 220px;
+  margin-top: 200px;
   letter-spacing: 5px;
 }
 
@@ -82,21 +87,34 @@ hr {
 
 /*nosotros*/
 #nosotros {
-  background-color: white;
+  background-position: bottom;
+  background-color: black;
   padding: 50px;
 }
 
 #nosotros figure{
+  height: 100%;
   overflow: hidden;
 }
 
 #nosotros figure img{
-  border-radius: 30px;
+  border-radius: 10px;
+  margin-top: 20%;
 }
 
+#nosotros h1 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+@media screen and (max-width:450px) {
+  #nosotros h1 {
+    font-size: 20px;
+  }
+}
 #nosotros p {
-  background-color: #222222;
-  border-radius: 30px;
   color: white;
   font-family: helvetica;
   font-size: 20px;
@@ -138,8 +156,12 @@ hr {
 
 /*Caprico del Rey*/
 #Capricho {
-  background-image: url('../img/black.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/leyenda-min.jpg');
   background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  padding: 170px 0;
+  height: 650px;
 }
 
 #Capricho .capricho-title {
@@ -174,18 +196,37 @@ hr {
   font-size: 30px;
 }
 
+#Capricho h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
 
 /*American Pale Ale*/
 #pale {
   background-color: black;
-  padding: 50px 0;
+  padding: 100px 0;
+}
+
+#pale figure {
+  margin-top: 70px;
+}
+
+#pale h2 {
+  font-size: 25px;
 }
 
 #pale h2, p {
   color: white;
+  text-align: justify;
 }
 
-
+#pale ul {
+  padding:0;
+}
 
 #pale ul li {
   color: white;
@@ -200,11 +241,19 @@ hr {
 /*Lager*/
 #lager {
   background-color: black;
-  padding: 50px 0;
+  padding: 100px 0;
+}
+
+#lager h2 {
+  font-size: 25px;
 }
 
 #lager h2, p {
   color: white;
+}
+
+#lager ul {
+  padding-left: 0;
 }
 
 #lager ul li {
@@ -219,7 +268,7 @@ hr {
 
 /*Contacto*/
 #contacto {
-   background-image: url(../img/puerto.jpg);
+   background-image: url(../img/contacto.jpg);
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
@@ -245,7 +294,7 @@ hr {
 #contacto p {
  text-align: center;
  color: black;
- font-size: 20px;
+ font-size: 15px;
  font-family: helvetica;
  width: 300px;
 }
@@ -254,10 +303,6 @@ hr {
   text-align: justify;
   margin-bottom: 30px;
   font-size: 15px;
-}
-
-#contacto p:nth-child(5) {
- font-size: 15px;
 }
 
 #contacto span {
